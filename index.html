@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="filter">
+        <div class="filterContainer">
+            <div class="filterHead">
+                <span class="filterName">filter with type</span>
+            </div>
+            <ul class="filterPrice">
+                <li class="listItem filterBtn" >frontend</li>
+                <li class="listItem filterBtn">backend</li>
+            </ul>
+        </div>
+        <div class="filterContainer">
+            <div class="filterHead">
+                <span class="filterName">filter with language</span>
+            </div>
+            <ul class="filterPrice">
+                <li class="listItem filterBtn" >React.js</li>
+                <li class="listItem filterBtn">Vue.js</li>
+                <li class="listItem filterBtn">Angular.js</li>
+                <li class="listItem filterBtn">Node.js</li>
+                <li class="listItem filterBtn">Java.js</li>
+            </ul>
+        </div>
+        <div class="filterContainer">
+            <div class="filterHead">
+                <span class="filterName">filter with age</span>
+            </div>
+            <ul class="filterPrice">
+                <li class="listItem filterAge" id="1">18 - 25</li>
+                <li class="listItem filterAge" id="2">25 - 30</li>
+                <li class="listItem filterAge" id="3">30 ang more</li>
+            </ul>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>
+                <span>Image</span>
+                <img src="./icons/filter.svg" alt="filterIcon" class="filterIcon sortNames">
+            </td>
+            <td>
+                <span>Name</span>
+                <img src="./icons/filter.svg" alt="filterIcon" class="filterIcon sortNames">
+            </td>
+            <td>
+                <span>Age</span>
+                <img src="./icons/filter.svg" alt="filterIcon" class="filterIcon">
+            </td>
+            <td>
+                <span>Type</span>
+                <img src="./icons/filter.svg" alt="filterIcon" class="filterIcon">
+            </td>
+            <td>
+                <span>Main language</span>
+                <img src="./icons/filter.svg" alt="filterIcon" class="filterIcon">
+            </td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
