@@ -51,7 +51,6 @@ const developers = [
         src: './icons/user4.png',
         mainLanguage: 'Angular.js',
         imgSrc: './icons/angular.png'
-
     },
 
 ];
@@ -60,6 +59,7 @@ let tbody = document.querySelector('tbody');
 const filterBtn = document.querySelectorAll('.filterBtn');
 const filterAge = document.querySelectorAll('.filterAge');
 const select = document.querySelectorAll('.filterContainer')
+const restartBtn = document.querySelector('.restartBtn')
 
 
 //DRAW A TABLE
@@ -139,6 +139,13 @@ select.forEach(sel => {
         sel.classList.remove('show')
     })
 })
+
+//All developers
+restartBtn.addEventListener('click', ()=> {
+    tbody.innerHTML = '';
+    drawTable(developers)
+})
+
 
 
 drawTable(developers);
